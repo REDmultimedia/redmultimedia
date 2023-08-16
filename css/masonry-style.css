@@ -1,0 +1,98 @@
+/**
+ * Base styles
+ */
+body {
+  font: 100% / 1.414 "Bitter", serif; }
+
+/**
+ * Layout styles
+ */
+header {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+/**
+ * Button component
+ */
+.btn {
+  position: relative;
+  top: 0;
+  margin-top: 50%;
+  left: 50%;
+  opacity: 0;
+  font-size: 1rem;
+  color: #FF3941;
+  background-color: #fff;
+  border-color: #FF3941;
+  border-radius: 0.625rem;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out; }
+  .btn:focus, .btn:hover {
+    color: #fff;
+    background-color: #FF3941;
+    border-color: #fff; }
+
+/**
+ * Grid styles
+ */
+.item__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.45);
+  -webkit-transition: background-color .55s ease-in-out;
+  -o-transition: background-color .55s ease-in-out;
+  transition: background-color .55s ease-in-out; }
+  .item__overlay:focus, .item__overlay:hover {
+    background-color: rgba(17, 17, 17, 0.05); }
+  .item__overlay:focus > button,
+  .item__overlay:hover > button {
+    opacity: 1; }
+
+.grid__sizer,
+.grid__item {
+  position: relative;
+  width: 23.85%;
+  min-width: 16.25rem; }
+  @media screen and (max-width: 767px) {
+    .grid__sizer,
+    .grid__item {
+      width: 100%; } }
+
+.grid__item {
+  margin-bottom: .9375rem;
+  border-radius: 0.25rem;
+  overflow: hidden; }
+
+.grid__item--high,
+.grid__item--high img {
+  height: 30rem; }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+
+/**
+ * Link styles
+ */
+a,
+.fa {
+  color: #FF3941;
+  -webkit-transition: color .25s ease-in-out;
+  -o-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out; }
+  a:focus, a:hover,
+  .fa:focus,
+  .fa:hover {
+    text-decoration: none;
+    color: #666; }
+
+.active .fa {
+  color: #f62459; }

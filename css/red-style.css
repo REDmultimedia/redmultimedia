@@ -1,0 +1,461 @@
+/* --------------- */
+/* Global - Styles */
+/* --------------- */
+html,body {
+    height: 100%;
+}
+body {
+    font-family: 'Bitter', serif;
+    font-size: 16px;
+    color:#888;
+}
+a {
+    color:#FF3941;
+}
+a:hover {
+    color:#888;
+    text-decoration: underline;
+}
+img.featured {
+    border: 1px solid #888;
+}
+.sidebar {
+    position: fixed;
+}
+.txt-white {
+    color:#fff;
+}
+.txt-red {
+    color:#FF3941;
+}
+.txt-grey {
+    color:#888;
+}
+.txt-grey2 {
+    color:#efefef;
+}
+.txt-black {
+    color: #333;
+}
+.bg-red {
+    background-color:#FF3941;
+}
+.bg-grey {
+    color:#888;
+}
+.bg-black{
+    background-color: #333333;
+}
+.bg-white{
+    background-color: #ffffff;
+}
+hr.divider {
+    width:90%;
+    border-top: 1px solid rgba(0,0,0,.5);
+    box-shadow: 0 5px 6px 1px rgba(0,0,0,.1);
+}
+hr.divider2 {
+    border : 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+}
+
+.brdr-bx > img {
+    border: 1px solid #333;
+}
+
+/* -------------- */
+/* Global Padding */
+/* -------------- */
+.t-pad {
+    padding-top:5%;
+}
+
+.lr-pad5 {
+    padding:0 5px;
+}
+.lr-pad10 {
+    padding:0 10px;
+}
+.lr-pad15 {
+    padding:0 15px;
+}
+.lr-pad20 {
+    padding:0 20px;
+}
+.lr-pad25 {
+    padding:0 25px;
+}
+.lr-pad30 {
+    padding:0 30px;
+}
+.lr-pad35 {
+    padding:0 35px;
+}
+
+.bx-pad5 {
+    padding:5px;
+}
+.bx-pad10 {
+    padding:10px;
+}
+.bx-pad15 {
+    padding:15px;
+}
+.bx-pad20 {
+    padding:20px;
+}
+.bx-pad25 {
+    padding:25px;
+}
+.bx-pad30 {
+    padding:30px;
+}
+.bx-pad35 {
+    padding:35px;
+}
+
+.btnPad {
+    padding:7px 2px;
+}
+
+div.card-body {    
+    background-color: #eeeeee; 
+}
+.social-icons {
+    color:#fff;
+    font-size:2rem;
+    display: block;
+    text-align: center;
+    margin: 5% 0;
+}
+.down-chevron {
+    display: inline-block;
+    font-size: 2em;
+    vertical-align: bottom;
+}
+#pano > .container-fluid > .row > .col {
+    height: inherit;
+}
+
+
+/* ------------- */
+/* Pano - Styles */
+/* ------------- */
+.pano-height {
+    height:auto;
+}
+h1.pano-title {
+    font-size: 10em;
+    line-height: .8;
+    margin: 0;
+    padding: 0;
+}
+h1.pano-title2 {
+    font-size: 5em;
+    line-height: .88;
+    margin: 0;
+    padding: 0;
+}
+h1.pano-title-client {
+    font-size: 2em;
+    line-height: .88;
+    margin: 0;
+    padding: 20% 0 20%;
+}
+h2.pano-subtitle {
+    font-size:1.5em;
+    color:#FF3941;
+    padding-top:15%;
+    padding-left: 2%;
+    
+}
+h1.break-word {
+  word-wrap: break-word;
+}
+div.pano-pad {
+    padding:75px 0 0;
+}
+
+/* ------------ */
+/* Nav - Styles */
+/* ------------ */
+a i.i-prev, a i.i-next, a i.i-home {
+    color:#efefef;
+}
+a:hover i.i-prev, a:hover i.i-next, a:hover i.i-home {
+    color:#888;
+}
+a span.navi {
+    display: none;
+}
+a:hover span.navi {
+    color:#888;
+}
+
+/* ---------------------- */
+/* card image link hovers */
+/* ---------------------- */
+.imgHolder{
+  display: inline-block;
+  background: #FF3941;
+}
+.item-fade{
+  vertical-align: top;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  opacity: 1;
+}
+.item-fade:hover{
+  opacity: 0.2;
+}
+
+
+.red-cont {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.red-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.red-ovrly {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  background-color: #FF3941;
+}
+
+.red-cont:hover .red-ovrly {
+  opacity: 0.9;
+}
+
+.red-icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* ------------------ */
+/* About Sec - Styles */
+/* ------------------ */
+.client-logo, .client-logo25 {
+    padding: 15% 0 8%;
+}
+h3.title {
+    color:#FF3941;
+    font-weight: bold;
+    padding:15% 0;
+}
+p.name {
+    font-size:larger;
+    font-weight: bold;
+    padding: 5% 0 0;
+    margin-bottom:0;
+    
+}
+p.desc {
+    padding-bottom: 5%;
+}
+p.main-copy{
+    font-size:larger;
+}
+p.main-copy::first-letter {
+  font-size: 500%;
+  line-height: .8;
+}
+
+/* ---------------- */
+/* Divider - Styles */
+/* ---------------- */
+.pg-divide {
+    background-color: #888;
+    height:20px;
+}
+
+/* ------------- */
+/* Card - Styles */
+/* ------------- */
+
+
+/* ----------------- */
+/* Carousel - Styles */
+/* ----------------- */
+
+/* ---------------- */
+/* Masonry - Styles */
+/* ---------------- */
+.grid img {
+    border: 1px solid #333333;
+}
+
+/* --------------- */
+/* Footer - Styles */
+/* --------------- */
+.txt-ftr {
+    font-size:small;
+    padding:8% 0 2%;
+    color:#fff;
+}
+.m-top {
+    margin-top:5%;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    h1.pano-title {
+        font-size: 22em;
+    }
+    h1.pano-title2 {
+        font-size: 14.5em;
+    }
+    h2.pano-subtitle {
+        font-size: 3.5em;
+    }
+    h3.title {
+        padding: 10% 0;
+    }
+    div.pano-pad {
+        padding: 75px 0 0;
+    }
+    p.name {
+        font-size: larger;
+    }
+    p.main-copy {
+        font-size: xx-large;
+    }
+    a span.navi {
+        display: inline-block;
+        font-size: 2em;
+        color:#efefef;
+    }
+    
+    .carousel-caption {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 30px;
+        background-color: rgba(0,0,0,.6);
+    }
+    .txt-ftr {
+        font-size:small;
+    }
+    .card-columns {
+        column-count: 2;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .client-logo {
+        width:50%;
+        padding:0;
+    }
+    .client-logo25 {
+        width:25%;
+        padding:0;
+    }
+
+    .sidebarH {
+        height: 100%;
+    }
+
+    h1.pano-title {
+        font-size: 10em;
+        text-align: right;
+        padding-right:1%;
+    }
+    h1.pano-title2 {
+        font-size: 7.75em;
+        padding-left:5px;
+    }
+    h1.pano-title3 {
+        color: #FF3941;
+        font-size: 10em;
+        line-height: .8;
+        margin: 0;
+        padding: 0;
+    }
+    h2.pano-subtitle {
+        font-size: 2.5em;
+        padding: 0 0 0 5px;
+    }
+    h3.title {
+        padding: 5% 0;
+    }
+    div.pano-pad {
+        padding: 50px 0 0;
+    }
+    p.name {
+        font-size: larger;
+    }
+    p.main-copy {
+        font-size: large;
+    }
+    p.main-copy::first-letter {
+      font-size: 400%;
+      line-height: .8;
+    }
+    h1.break-word {
+        word-wrap: normal;
+    }
+    .txt-ftr {
+        padding: 4% 0 2%;
+    }
+    
+    .card-columns {
+        column-count: 3;
+    }
+    
+    /* ---------------- */
+    /* CSS - Animations */
+    /* ---------------- */
+    .sdbr-lft-eo-before {
+        -webkit-transition: max-width 2s; /* Safari */
+        -webkit-transition-timing-function: ease-out 2s;
+        transition: width 2s;    
+        transition-timing-function: ease-out 2s;
+        width:25%;
+    }
+    .sdbr-lft-eo-after {
+        -webkit-transition: max-width 2s; /* Safari */
+        -webkit-transition-timing-function: ease-in 2s;
+        transition: width 2s;    
+        transition-timing-function: ease-in 2s;
+        width: 8.333333%;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+
+}
+
+
+

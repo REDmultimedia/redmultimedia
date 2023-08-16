@@ -1,0 +1,94 @@
+// Remy function
+@function remy($value) {
+  @return ($value / 16px) *1rem;
+}
+/**
+ * Base styles
+ */
+body {
+  font: 100% / 1.414 "Bitter", serif;
+}
+/**
+ * Layout styles
+ */
+header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+/**
+ * Button component
+ */
+.btn {
+  position: relative;
+  top: 0;
+  margin-top: 50%;
+  left: 50%;
+  opacity: 0;
+  font-size: 1rem;
+  color: #FF3941;
+  background-color:#fff;
+  border-color: #FF3941;
+  border-radius: remy(10px);
+  transform: translateX(-50%);
+  transition: all .25s ease-in-out;
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: #FF3941;
+    border-color: #fff;
+  }
+}
+/**
+ * Grid styles
+ */
+.item__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#111, .45);
+  transition: background-color .55s ease-in-out;
+  &:focus,
+  &:hover {background-color: rgba(#111, .05);}
+  &:focus > button,
+  &:hover > button {opacity: 1;}
+}
+
+$break-small:767px;
+
+.grid__sizer,
+.grid__item {
+  position: relative;
+  width: 23.85%;
+  min-width: remy(260px);
+  @media screen and (max-width: $break-small) {
+    width:100%;
+  }
+}
+.grid__item {
+  margin-bottom: .9375rem;
+  border-radius: remy(4px);
+  overflow: hidden;
+}
+.grid__item--high,
+.grid__item--high img {height: remy(480px);}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+/**
+ * Link styles
+ */
+a,
+.fa {
+  color: #FF3941;
+  transition: color .25s ease-in-out;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: #666;
+  }
+}
+.active .fa {color: #f62459;}
